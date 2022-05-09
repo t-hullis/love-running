@@ -8,18 +8,18 @@
 }
 
 body {
-    font-family: lato;
+    font-family: Lato, sans-serif;
     font-weight: 300;
     color: #252525;
 }
 
+/* heading /logo */
 h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
 }
-
 
 #menu, #logo {
     line-height: 75px;
@@ -35,8 +35,9 @@ h1, h2 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
-    
 }
+    
+
 #menu li {
     float: right;
     list-style-type: none;
@@ -154,8 +155,8 @@ hr {
 }
 
 #welcome {
-    margin: 20px 0;
     text-align: center;
+    margin: 20px 0;
     font-size: 280%;
 }
 #circle-container {
@@ -234,4 +235,34 @@ footer {
 
 #photos >img {
     width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+        width: 65%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
 }
